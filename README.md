@@ -6,12 +6,14 @@ A GitHub template for a Rust full-stack app: Yew (WASM), tonic (gRPC), gRPC-Web,
 
 Docker-only quick start: Docker and Docker Compose.
 
-Local app development also needs Rust stable, the `wasm32-unknown-unknown` target, and Trunk:
+Local app development: Rust stable, the `wasm32-unknown-unknown` target, and Trunk:
 
 ```bash
 rustup target add wasm32-unknown-unknown
 cargo install trunk --locked
 ```
+
+Optional: [Nix dev shell](docs/nix.md) for reproducible tooling and preset env vars.
 
 ## Quick start
 
@@ -75,4 +77,5 @@ FRONTEND_BACKEND_URL=http://127.0.0.1:50051 trunk serve
 
 ## Further reading
 
-See [AGENTS.md](AGENTS.md) for agent-oriented architecture, API, and validation docs.
+- [AGENTS.md](AGENTS.md) — architecture, API, and validation
+- [docs/nix.md](docs/nix.md) — optional Nix dev shell

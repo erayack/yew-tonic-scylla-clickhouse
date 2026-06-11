@@ -2,7 +2,7 @@
 
 Rust full-stack template: Yew WASM frontend, tonic gRPC server, ScyllaDB operational store, ClickHouse analytics store.
 
-**Tooling:** Cargo workspace. Frontend builds with [Trunk](https://trunk-rs.github.io/trunk/) for `wasm32-unknown-unknown`.
+**Tooling:** Cargo workspace. Frontend builds with [Trunk](https://trunk-rs.github.io/trunk/) for `wasm32-unknown-unknown`. Optional: `nix develop` ([docs/nix.md](docs/nix.md)).
 
 ## Commands
 

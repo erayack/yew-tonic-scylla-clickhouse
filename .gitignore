@@ -1,6 +1,10 @@
 # Rust
 /target/
 
+# Nix
+result
+result-*
+
 # Trunk (WASM frontend build output)
 **/dist/
 
