@@ -1,0 +1,20 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+clickhouse = { version = "0.13", features = ["uuid", "time"] }
+scylla = { version = "0.15", features = ["chrono-04"] }
+serde.workspace = true
+shared = { path = "../shared", features = ["server"] }
+tokio.workspace = true
+tonic.workspace = true
+tonic-web = "0.12"
+tower-http = { version = "0.6", features = ["cors"] }
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true

@@ -1,0 +1,22 @@
+# Rust
+/target/
+
+# Trunk (WASM frontend build output)
+**/dist/
+
+# Local environment (keep .env.example)
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*~

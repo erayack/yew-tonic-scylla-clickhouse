@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package app.v1;
+
+service AppService {
+  rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+  rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse);
+}
+
+message HealthCheckRequest {}
+
+message HealthCheckResponse {
+  string status = 1;
+}
+
+message CreateEventRequest {
+  string name = 1;
+  string payload = 2;
+}
+
+message CreateEventResponse {
+  string id = 1;
+}
