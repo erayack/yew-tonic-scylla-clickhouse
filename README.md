@@ -13,7 +13,15 @@ rustup target add wasm32-unknown-unknown
 cargo install trunk --locked
 ```
 
-Optional: [Nix dev shell](docs/nix.md) for reproducible tooling and preset env vars.
+```bash
+nix develop
+```
+
+If flakes are not enabled globally yet:
+
+```bash
+nix --extra-experimental-features 'nix-command flakes' develop
+```
 
 ## Quick start
 
@@ -78,4 +86,3 @@ FRONTEND_BACKEND_URL=http://127.0.0.1:50051 trunk serve
 ## Further reading
 
 - [AGENTS.md](AGENTS.md) — architecture, API, and validation
-- [docs/nix.md](docs/nix.md) — optional Nix dev shell

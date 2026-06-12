@@ -19,9 +19,9 @@
         targets = [ "wasm32-unknown-unknown" ];
       };
 
-      darwinLibs = pkgs.lib.optionals pkgs.stdenv.isDarwin (
-        with pkgs.darwin.apple_sdk.frameworks; [ Security SystemConfiguration ]
-      );
+      darwinLibs = pkgs.lib.optionals pkgs.stdenv.isDarwin [
+        pkgs.apple-sdk
+      ];
     in {
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
