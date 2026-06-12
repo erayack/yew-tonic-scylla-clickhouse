@@ -17,6 +17,7 @@ pub struct ClickHouseStore {
 
 #[derive(Row, Serialize)]
 struct EventAnalyticsRow {
+    #[serde(with = "clickhouse::serde::uuid")]
     id: Uuid,
     name: String,
     created_at: i64,
